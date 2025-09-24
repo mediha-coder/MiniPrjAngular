@@ -1,0 +1,11 @@
+
+<div  class="content">
+  <mat-form-field class="field" appearance="fill">
+    <mat-label class="chat">Chat Title</mat-label>
+    <input matInput [(ngModel)]="conversationTitle" placeholder="Enter chat title">
+  </mat-form-field>
+</div>
+<div class="button" mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onStart()"cdkFocusInitial>Start</button>
+</div>

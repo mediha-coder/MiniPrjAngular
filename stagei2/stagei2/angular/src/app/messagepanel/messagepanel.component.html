@@ -1,0 +1,10 @@
+
+<div class="message-container">
+    <div *ngFor="let message of messages" [ngClass]="getMessageAlignment(message)">
+      {{ message.content }}
+      <p class="message-time">{{ message.createdAt }}</p> 
+    </div>
+  
+  </div>
+  
+  

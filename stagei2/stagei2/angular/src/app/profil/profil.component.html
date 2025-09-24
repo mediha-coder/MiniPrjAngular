@@ -1,0 +1,14 @@
+<div class="profile-container">
+  <img [src]="profileImageUrl" alt="User Photo" class="profile-photo" (click)="toggleMenu()" [matMenuTriggerFor]="profileMenu" mat-icon-button>
+  <!---<input type="file" id="fileInput" (change)="onFileSelected($event)" hidden />---->
+  
+
+</div>
+
+<mat-menu #profileMenu="matMenu" [overlapTrigger]="false">
+  <button mat-menu-item (click)="logout()">Logout</button>
+  <button mat-menu-item (click)="resetpassword()">Reset Password</button>
+  <button mat-menu-item (click)="Editprofile()">Edit Profile</button>
+
+ 
+</mat-menu>

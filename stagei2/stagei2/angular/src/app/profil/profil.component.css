@@ -1,0 +1,16 @@
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+mat-menu-item {
+  display: flex;
+  align-items: center;
+}

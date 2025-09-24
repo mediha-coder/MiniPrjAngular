@@ -1,0 +1,155 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+ width: 100%;
+ height: 100%;
+overflow: auto; 
+ background-color:white;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+ 
+  width: 100%; 
+  
+  color: white;
+}
+
+.app-user-input {
+  display: flex;
+  align-items: center;
+  background-color:rgb(255, 255, 255);
+  margin-left: 20%;
+  margin-top: 30%;
+  position: fixed;
+  width: 60%;
+  height: 25%;
+
+ 
+}
+
+.message-panel {
+  flex-grow: 1;
+  overflow-y: hidden;
+  height: fit-content;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.delete{
+margin-left: 10px;
+}
+mat-form-field {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+  
+}
+textarea.mat-input-element {
+  overflow: auto;
+  word-wrap: break-word; 
+  
+}
+mat-sidenav {
+  width: 200px;
+
+}
+.mat-sidenav-container {
+  height: 100vh;
+ 
+}
+
+.mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.saved-conversations {
+  padding: 10%;
+}
+
+.saved-conversations p {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.saved-conversations div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5% 0;
+}
+.user{
+  display: flex;
+}
+
+.menu{
+  color: #1f1d1d;
+  margin-top: 10px;
+  
+}
+.close{
+  margin-top: 10px;
+}
+.add{
+  color: #0f0e0e;
+}
+.button-group {
+  display: flex;
+
+
+
+}
+
+.button-group button {
+  margin-left: 8px; 
+}
+
+.send{
+block-size: 20px;
+
+}
+
+mat-form-field button{
+  margin-left: 95%;
+}
+
+.title:hover{
+  background-color: rgb(234, 241, 241);
+ 
+
+}
+.conv{
+  padding-left: 5px;
+}
+
+mat-icon {
+  font-size: 24px; 
+}
+
+
+.new-chat-button
+{
+  margin-left: 10%;
+  width: 150px;
+  height: 35px;
+}
+
+mat-sidenav-content {
+  transition: margin-left 0.3s ease;
+}
+.menu-open .message-panel {
+  margin-left: 0%; 
+}
+.menu-open .app-user-input{
+  margin-left: 140px;
+}
+.profile{
+  margin-left: 1170px;
+}

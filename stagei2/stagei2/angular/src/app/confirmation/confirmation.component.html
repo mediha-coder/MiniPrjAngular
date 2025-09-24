@@ -1,0 +1,12 @@
+<form (ngSubmit)="onConfirmEmail()">
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="confirmEmailModel.email" name="email" required>
+      </mat-form-field>
+    <mat-form-field>
+      <mat-label>Verification Code</mat-label>
+      <input matInput [(ngModel)]="confirmEmailModel.code" name="code" required>
+    </mat-form-field>
+    <button mat-raised-button type="submit">Confirm Email</button>
+  </form>
+  

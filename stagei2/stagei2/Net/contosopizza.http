@@ -1,0 +1,28 @@
+//@contosopizza_HostAddress = http://localhost:5072
+
+//GET {{contosopizza_HostAddress}}/weatherforecast/
+//Accept: application/json
+###
+///GET {{contosopizza_HostAddress}}/Conversations/
+//Accept: application/json
+###
+//GET {{contosopizza_HostAddress}}/pizza/
+//Accept: application/json
+
+###
+//POST {{contosopizza_HostAddress}}/Conversations/
+//Content-Type: application/json
+
+{
+        "id": 80,
+        "sender": "moi",
+        "recipient": "toi",
+        "message": "Hi there!",
+        "sentAt": "2024-06-27T10:01:00"
+}
+
+###
+
+//DELETE {{contosopizza_HostAddress}}/conversations/
+
+###

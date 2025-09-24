@@ -1,0 +1,13 @@
+<div class="profile-section">
+    <h2>Edit Profile</h2>
+    
+  
+    <div class="profile-picture">
+        <img  [src]="  profileImageUrl " alt="Avatar" class="profile-photo">
+        <input type="file" id="upload-photo" (change)="onFileSelected($event)" hidden #fileInput accept="image/*">
+        <button class="changephoto"   mat-raised-button color="primary" (click)="fileInput.click()">Changer la photo de profil</button>
+    </div>
+ 
+   
+    <button  mat-raised-button color="primary" class="saveimg" (click)="saveProfileImage()">Save</button>
+</div>

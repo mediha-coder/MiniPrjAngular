@@ -1,0 +1,77 @@
+<div class="container">
+  <!--<mat-toolbar class="app-header">-->
+    <div class="button-group">
+
+      <mat-icon
+        *ngIf="!showSavedConversations"
+        class="menu"
+        mat-icon-button
+        (click)="toggleSavedConversations()"
+      >
+        menu
+      </mat-icon>
+     
+      <app-profile class="profile"></app-profile>
+     
+    </div>
+  
+ <!------ </mat-toolbar>--->
+  
+  <mat-sidenav-container>
+    
+    <mat-sidenav
+      mode="side"
+      [(opened)]="showSavedConversations"
+      class="saved-conversations-sidenav"
+    >
+    <mat-icon
+    *ngIf="showSavedConversations"
+    class="close"
+    mat-icon-button
+    (click)="toggleSavedConversations()"
+  >
+    menu
+  </mat-icon>
+      <button mat-raised-button class="new-chat-button" (click)="openDialog()">
+        New Chat
+      </button>
+  
+      <div class="saved-conversations">
+        <p>Saved Conversations</p>
+        <div
+          class="title"
+          *ngFor="let conversation of savedConversations$ | async"
+          (click)="selectConversation(conversation)"
+        >
+          <a class="conv">{{ conversation.title }}</a>
+        </div>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content [ngClass]="{ 'menu-open': showSavedConversations }">
+      <div class="message-panel">
+        <app-messagepanel [messages]="data"></app-messagepanel>
+      </div>
+
+      <div class="app-user-input">
+        <mat-form-field>
+          <textarea
+            matInput
+            placeholder="Type your message"
+            [(ngModel)]="userMessage"
+            (keyup.enter)="sendMessageAndSave()"
+            cdkTextareaAutosize
+          ></textarea>
+        </mat-form-field>
+        <button
+          mat-icon-button
+          class="send"
+          (click)="sendMessageAndSave()"
+          class="send-button"
+        >
+          <mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+ 
+</div>

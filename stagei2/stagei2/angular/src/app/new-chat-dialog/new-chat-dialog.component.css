@@ -1,0 +1,53 @@
+.content {
+  margin-top: 10%;
+  margin-left: 25%; 
+  margin-right: 20%;
+}
+
+
+.field {
+  width: 100%;
+}
+
+.chat {
+  font-size: 16px;
+  color: #555;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 8px; 
+  margin-top: 16px;
+  margin-bottom: 7px; 
+}
+
+
+.button .mat-button {
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+}
+
+.button .mat-button:first-of-type {
+  color: #757575; 
+  border: 1px solid #ccc; 
+}
+
+.button .mat-button:last-of-type {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+}
+
+.button .mat-button:hover {
+  background-color: #0056b3; 
+  color: white; 
+}
+
+
+.button .mat-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}

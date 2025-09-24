@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Hp\\Downloads\\contosopizza - Copie\\wwwroot\\uploads\\ha.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ha.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Downloads\\contosopizza - Copie\\wwwroot\\uploads\\img.jpg",
+      "PackagePath": "staticwebassets\\uploads\\img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Downloads\\contosopizza - Copie\\wwwroot\\uploads\\moi (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\moi (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Hp\\Downloads\\contosopizza - Copie\\wwwroot\\uploads\\moi.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\moi.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.contosopizza.props",
+      "PackagePath": "build\\contosopizza.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.contosopizza.props",
+      "PackagePath": "buildMultiTargeting\\contosopizza.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.contosopizza.props",
+      "PackagePath": "buildTransitive\\contosopizza.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.contosopizza.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
