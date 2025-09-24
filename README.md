@@ -1,0 +1,1 @@
+Designed and implemented a full-stack chatbot application: Angular (CLI, TypeScript) for the frontend, .NET Core with EF Core for the backend, and MySQL as the database. TypeScript was used to handle training and conversation flow.
